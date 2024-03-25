@@ -87,6 +87,25 @@ Output example
 ```
 
 8) use script provided to parse all .ipa files, and select the suitable ones
-
-
+```
+e:/Winpython/WPy64-31040/python-3.10.4.amd64/python.exe e:/Winpython/ipatool-py-master/parse_ipa.py
++-------------------------------------------------------------------------------------------+-------------+----------------+
+| File                                                                                      | Version     |   IOS required |
+|-------------------------------------------------------------------------------------------+-------------+----------------|
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-19.0.1084.60-535886823-8682551.ipa   | 19.1084.60  |            4.3 |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-21.0.1180.77-535886823-10009450.ipa  | 21.1180.77  |            4.3 |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-21.0.1180.80-535886823-10288631.ipa  | 21.1180.80  |            4.3 |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-21.0.1180.82-535886823-10685471.ipa  | 21.1180.82  |            4.3 |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-23.0.1271.100-535886823-13058434.ipa | 23.1271.100 |            4.3 |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-23.0.1271.91-535886823-12047844.ipa  | 23.1271.91  |            4.3 |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-23.0.1271.96-535886823-12846865.ipa  | 23.1271.96  |            4.3 |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-25.0.1364.124-535886823-14550546.ipa | 25.1364.124 |            5   |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-25.0.1364.86-535886823-14159802.ipa  | 25.1364.86  |            5   |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-26.0.1410.50-535886823-14937994.ipa  | 26.1410.50  |            5   |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-27.0.1453.10-535886823-15368203.ipa  | 27.1453.10  |            5   |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-28.0.1500.12-535886823-15757367.ipa  | 28.1500.12  |            5   |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-28.0.1500.16-535886823-15933992.ipa  | 28.1500.16  |            5   |
+| E:/Winpython/ipatool-py-master/com.google.chrome.ios-29.0.1547.11-535886823-16447860.ipa  | 29.1547.11  |            5   |
++-------------------------------------------------------------------------------------------+-------------+----------------+
+```
 

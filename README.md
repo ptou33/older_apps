@@ -38,14 +38,14 @@ python3 actions-iTunes-header/workflow_helper/iTunesDownload/get_header.py
 ```
 check ip address of local server (127.0.0.1), and ip of local machine (avoid using vpn)
 
-7)
+# 6)
 open web page on browser on apple store, id is on the link address. for example Chrome apple store is:
 ```
 https://apps.apple.com/it/app/google-chrome/id535886823
 ```
 and id is 535886823
 
-9)
+# 7)
 I have not found a way to know the version and ios compatibility in advance, so I download everything
 ```
 python3 main.py download -s http://127.0.0.1:9000 --appId 535886823 --downloadAllVersion
@@ -86,7 +86,8 @@ Output example
           
 ```
 
-8) use script provided to parse all .ipa files, and select the suitable ones
+# 8) 
+use script provided to parse all .ipa files, and select the suitable ones
 ```
 e:/Winpython/WPy64-31040/python-3.10.4.amd64/python.exe e:/Winpython/ipatool-py-master/parse_ipa.py
 +-------------------------------------------------------------------------------------------+-------------+----------------+

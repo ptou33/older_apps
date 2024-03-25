@@ -35,12 +35,16 @@ python3 actions-iTunes-header/workflow_helper/iTunesDownload/get_header.py
 check ip address of local server (127.0.0.1), and ip of local machine (avoid using vpn)
 
 7)
-open web page on browser on apple store, id is on the link address
+open web page on browser on apple store, id is on the link address. for example Chrome apple store is:
+```
+https://apps.apple.com/it/app/google-chrome/id535886823
+```
+and id is 535886823
 
-8)
+9)
 I have not found a way to know the version and ios compatibility in advance, so I download everything
 ```
-python3 main.py download -s http://127.0.0.1:9000 --appId 1064769019 --downloadAllVersion
+python3 main.py download -s http://127.0.0.1:9000 --appId 535886823 --downloadAllVersion
 ```
 
 Output example

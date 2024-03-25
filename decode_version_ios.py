@@ -3,10 +3,15 @@
 
 import os
 from zipfile import ZipFile
-from pprint import pprint
 import plistlib
+from tabulate import tabulate
 
+### CONFIGURATION
 root = "E:/Winpython/ipatool-py-master/"
+filter_ios_version_min = 4
+filter_ios_version_max = 5
+###
+
 
 find_keys = ["CFBundleShortVersionString", "MinimumOSVersion"]
 results = []
@@ -25,6 +30,8 @@ for file in os.listdir(root):
                     results.append((file_name, pl[find_keys[0]], pl[find_keys[1]]))
 
 
-results = list(filter(lambda x: float(x[2]) < 10, results))
-results = list(filter(lambda x: float(x[2]) >= 9, results))
-pprint(results)
+results = list(filter(lambda x: float(x[2]) <= filter_ios_version_max, results))
+results = list(filter(lambda x: float(x[2]) >= filter_ios_version_min, results))
+
+headers = ["File", "Version", "IOS required"]
+print(tabulate(results, headers, tablefmt="psql"))

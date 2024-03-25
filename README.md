@@ -17,16 +17,20 @@ download this repo: https://github.com/NyaMisty/actions-iTunes-header
 install iTunes 12.6.5.3, from https://secure-appldnld.apple.com/itunes12/091-87819-20180912-69177170-B085-11E8-B6AB-C1D03409AD2A6/iTunes64Setup.exe
 
 2)
-patch the iTunes using actions-iTunes-header/workflow_helper/iTunesInstall/patch_itunes.py
-
-3)
-open iTunes, sign out & re-login your account
+patch the iTunes using
+```
+python3 actions-iTunes-header/workflow_helper/iTunesInstall/patch_itunes.py
+```
+to make it work, python should be run as administrator as itunes.exe will be modified.
 
 4)
+open iTunes, sign out & re-login your account
+
+5)
 authorize itunes on the computer
 buy something on app store, to remember password (maybe not needed)
 
-5)
+6)
 install frida:
 ```
 pip3 install frida
